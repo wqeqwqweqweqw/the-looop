@@ -1,0 +1,368 @@
+@font-face {
+    font-family: 'robotoblack';
+    src: url(../fonts/roboto-black-webfont.woff2) format('woff2'),
+         url(../fonts/roboto-black-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url(../fonts/roboto-bold-webfont.woff2) format('woff2'),
+         url(../fonts/roboto-bold-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotolight';
+    src: url(../fonts/roboto-light-webfont.woff2) format('woff2'),
+         url(../fonts/roboto-light-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url(../fonts/roboto-medium-webfont.woff2) format('woff2'),
+         url(../fonts/roboto-medium-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url(../fonts/roboto-regular-webfont.woff2) format('woff2'),
+         url(../fonts/roboto-regular-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+@media (max-width: 1110px) {
+    .container {
+        width: auto;
+        padding: 0 30px;
+    }
+}
+@media (max-width:1326px) {
+    .slider_button--prev{
+        left: 0;
+    }
+    .slider_button--next {
+        right: 0;
+    }
+}
+@media (max-width:786px) {
+    .slider_wrapper {
+        display: none;
+    }
+    .slider_button {
+        display: none;
+    }
+    .header {
+        min-height: 90px;
+    }
+}
+@media (max-width:992px) {
+    .menu_wrapper {
+        flex-wrap: wrap;
+    }
+    .logo {
+        order: -1;
+        width: 100%;
+    }
+}
+@media (max-width:600px) {
+    .basket,
+    .menu {
+     display: none;
+    }
+}
+.navbar-toggler {
+      display: none;  
+}
+body {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    min-width: 320px;
+    margin: 0;
+    padding: 0;
+    font-family: "robotoregular",  "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400px;
+    color: #000;
+}
+.header {
+    margin-left: -250px;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    background-color: #F9F6F1;
+    width: 2200px;
+    height: 1926px;
+}
+.section_wrapper_container {
+    display: flex;
+    justify-content: space-between;
+    width: 1000;
+    margin-left: 125px;
+    background-color: #d7b399;
+}
+.header-menu {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    
+}
+.section.header-menu {
+    min-height: 90px;
+    position: absolute;
+   
+}
+.section.banner {
+    margin: 90px;
+}
+.container_delivery  {
+    position: relative;
+   color: rgb(255, 255, 255);
+   font-size: 30px;
+   background-color: #212121;
+   height: 210px;
+   text-align: center;
+   padding: 20px;
+   margin-left: -100px;
+}
+.container {
+    position: relative;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+.section_wrapper {
+    display: flex;
+    flex-direction: row;
+}
+.menu_link {
+    color: #000;
+}
+.mainmenu_list {
+    display: flex;
+}
+.basket_list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 19px;
+    align-items:center;
+}
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+li {
+    padding-right: 15px;
+}
+a {
+    text-decoration: none;
+}
+.slider_item {
+    display: flex;
+    padding-top: 166px;
+    justify-content: space-between;
+    min-height: 564px;
+    background: url('../img/running_shoes_PNG5823.png') no-repeat right center;
+    width: 1050px;
+    margin-left: 45px;
+}
+.slider_text {
+    font-size: 30px;
+}
+.slider_big-text {
+    font-family: "montserratbold", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 55px;
+    text-transform: uppercase;
+}
+.button {
+    display: block;
+    width: 240px;
+    padding: 22px 0;
+    text-align: center;
+    background-color: #d7b399;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+}
+.slider_item-price {
+    font-family: "montserratbold", "Arial", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.slider_price--old {
+    font-size: 24px;
+    text-decoration-line: line-through ;
+}
+.slider_price--new {
+    font-size: 42px;
+    color: #d84033;
+}
+.slider_button {
+    position: absolute;
+    top: 50%;
+    border: #f9f6f1;
+}
+.slider_button--prev {
+    left: 300px;
+    top: 300px;
+}
+.slider_button--next {
+    right: 300px;
+    top: 300px;
+}
+.slider_wrapper {
+    position: relative;
+}
+.dress_wrapper {
+    flex-wrap: wrap;
+}
+.dress_item {
+    position: relative;
+    width: 265px;
+    height: 275px;
+}
+.container.section_wrapper.dress_wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    margin-left: 350px;
+    text-align: right;
+}
+.dress_item-grey {
+    background-color: #f4f4f4;
+}
+.dress_item-cream {
+    background-color: #f9f6f1;
+}
+.menowom {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 300px;
+    position: relative;
+    margin-left: 500px;
+}
+.myman p{
+    font-size: 25px;
+}
+.baton {
+    border: #d7b399;
+}
+.girla p{
+    font-size: 25px; 
+}
+.sasalele {
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+    margin-left: -100px;
+}
+.sasalele h1 {
+    margin: 100px;
+}
+.knopcka {
+margin: 100px;
+    border: #fff;
+}
+.promocode {
+    position: relative;
+    background-color: #212121;
+    height: 200px;
+    display: flex;
+}
+.propi {
+    width: 1200px;
+    display: flex;
+    justify-content:space-between;
+    color: white;
+    padding: 50px;
+    margin-left: 290px;
+}
+.propi input {
+    height: 45px;
+    margin-top: 10px;
+    color: rgb(199, 194, 194);
+    margin-left: -185px;
+}
+.propi img {
+    height: 45px;   
+    margin-top: 10px;
+    margin-right: -60px;
+}
+.sus {
+    position: relative;
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+    margin-left: -100px;
+}
+.sus h1 {
+    margin: 100px;
+}
+.damy {
+    display: flex;
+    justify-content: center;
+}
+.knopcka {
+margin: 100px;
+    border: #fff;
+}
+.phone {
+    position: relative;
+    background-color: #212121;
+    color: #fff;
+    display: flex;
+justify-content: space-between;
+padding: 40px;
+width: 1943px;
+height: 300px;
+
+}
+.pud {
+    text-align: center;
+    width: 200px;
+}
+.pud1 {
+    width: 200px;
+}
+.pud2 {
+    width: 200px;
+}
+.pud3 {
+    width: 200px;
+}
+.pud4 {
+    width: 150px;
+}
+.logo{
+margin-top: 17px;
+display: flex;
+}
+.ivnin{
+    margin: 0px 30px;
+}
+.AT{
+text-align: center;
+margin-bottom: 100px;
+}
+.asdasd{
+    width: 30px;
+}
